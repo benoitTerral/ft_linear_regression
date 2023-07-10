@@ -8,4 +8,43 @@ using a `linear function` train with a `gradient descent algorithm`.
 
 > The use of python’s numpy.polyfit (or any other library such as scipy) is considered cheating.
 
+## Goal
+
+Perform a linear regression on the below dataset:
+
+![Screenshots](/graphs/dataset_scatterplot.png)
+
+In order to provide a program accepting the mileage as an input and estimate the price of a used car.
+
+## Usage
+
+To be performed at the end
+
+## Linear regression explanation
+
+### Model
+
+Linear regression aims to find the `a` and `b` parameters:
+
+$$f(x) = ax + b$$
+
+> At first, a and b will be set randomly.
+
+### Cost Function (Mean squared error)
+
+For the Linear regression model, the cost function is convex obtained by subtracting the predicted values by the actual values.
+
 $$J(a, b) = \frac{1}{2m} \sum_{i=1}^m (f(x_i) - y_i)^2$$
+
+### Gradient descent algorithm
+
+Iterative optimization algorithm for finding a minimum of a differentiable function.
+One must choose a step size called `learning rate` (or $ \alpha ∈ \mathbb {N+} $)
+
+$$ a_{i+1} = a_i - \alpha \frac{\partial J(a_i,b)}{\partial a}$$
+$$ b_{i+1} = b_i - \alpha \frac{\partial J(a,b_i)}{\partial b}$$
+
+And the gradient (derivates formulae) are:
+
+$$ \frac{\partial J(a, b)}{\partial a} = \frac{1}{m} \sum_{i = 1}^m x_i (ax_i + b - y_i)$$
+$$ \frac{\partial J(a, b)}{\partial b} = \frac{1}{m} \sum_{i = 1}^m (ax_i + b - y_i)$$
