@@ -18,7 +18,10 @@ In order to provide a program accepting the mileage as an input and estimate the
 
 ## Usage
 
-To be performed at the end
+Git clone the repository
+
+Train the program:
+`python `
 
 ## Linear regression explanation
 

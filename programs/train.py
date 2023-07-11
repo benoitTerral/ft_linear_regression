@@ -1,6 +1,7 @@
 import papermill as pm
 import os
 
+
 def main():
     os.chdir(os.path.dirname(__file__))
     notebook = '../notebook/train.ipynb'

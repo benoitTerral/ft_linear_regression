@@ -29,6 +29,8 @@ def gradient_descent(X, y ,theta, learning_rate, n_iterations):
 
 
 def coeff_determination(y, pred):
+    """also called r squared proportion of the variation in the dependent variable
+    that is predictable from the independent variable(s)"""
     u = ((y - pred) ** 2).sum()
     v = ((y - y.mean())**2).sum()
     return 1 - u / v
