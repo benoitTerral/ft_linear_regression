@@ -18,10 +18,21 @@ In order to provide a program accepting the mileage as an input and estimate the
 
 ## Usage
 
-Git clone the repository
+Git clone the repository.
 
-Train the program:
-`python `
+Train the model:
+`<python-binary> programs/train.py`
+
+> Training the program generates a pickle file containing the theta in in the notebook folder. This data file is a parameter of the estimation program.
+
+Estimate the price of a used car:
+`<python-binary> programs/estimate.py`
+
+Check the results in `notebook/train.ipynb`
+
+A prompt will invite users to insert odometer values and returns the expected price according to the linear regression.
+
+> If there is no trained model, theta values are 0.
 
 ## Linear regression explanation
 
