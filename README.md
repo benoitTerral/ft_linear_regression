@@ -53,15 +53,15 @@ $$J(a, b) = \frac{1}{2m} \sum_{i=1}^m (f(x_i) - y_i)^2$$
 ### Gradient descent algorithm
 
 Iterative optimization algorithm for finding a minimum of a differentiable function.
-One must choose a step size called `learning rate` (or $ \alpha ∈ \mathbb {N+} $ )
+One must choose a step size called `learning rate` (or $\alpha ∈ \mathbb {N+}$ )
 
-$$ a_{i+1} = a_i - \alpha \frac{\partial J(a_i,b)}{\partial a}$$
-$$ b_{i+1} = b_i - \alpha \frac{\partial J(a,b_i)}{\partial b}$$
+$$a_{i+1} = a_i - \alpha \frac{\partial J(a_i,b)}{\partial a} \\
+b_{i+1} = b_i - \alpha \frac{\partial J(a,b_i)}{\partial b}$$
 
 And the gradients are ([math explanation](math_cheat_sheet/gradient.ipynb)):
 
-$$ \frac{\partial J(a, b)}{\partial a} = \frac{1}{m} \sum_{i = 1}^m x_i (ax_i + b - y_i)$$
-$$ \frac{\partial J(a, b)}{\partial b} = \frac{1}{m} \sum_{i = 1}^m (ax_i + b - y_i)$$
+$$\frac{\partial J(a, b)}{\partial a} = \frac{1}{m} \sum_{i = 1}^m x_i (ax_i + b - y_i)$$
+$$\frac{\partial J(a, b)}{\partial b} = \frac{1}{m} \sum_{i = 1}^m (ax_i + b - y_i)$$
 
 ### Matrix Equation
 
@@ -70,17 +70,17 @@ More explanations about matrix [here](math_cheat_sheet/matrix.ipynb)
 
 **Model**
 
-$$ F = X . \theta $$
+$$F = X . \theta$$
 
 **Cost Function**
 
-$$ J(\theta) = \frac{1}{2m} \sum (X\theta - y)^2 $$
+$$J(\theta) = \frac{1}{2m} \sum (X\theta - y)^2$$
 
 **Gradients**
 
-$$ \frac{\partial J(a, b)}{\partial \theta} = \frac{1}{m} X^T (X\theta - Y) $$
+$$\frac{\partial J(a, b)}{\partial \theta} = \frac{1}{m} X^T (X\theta - Y)$$
 
 **Gradient descent**
 
-$$ \theta = \theta - \alpha \frac{\partial J}{\partial \theta} $$
+$$\theta = \theta - \alpha \frac{\partial J}{\partial \theta}$$
 
