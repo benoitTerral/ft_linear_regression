@@ -53,7 +53,7 @@ $$J(a, b) = \frac{1}{2m} \sum_{i=1}^m (f(x_i) - y_i)^2$$
 ### Gradient descent algorithm
 
 Iterative optimization algorithm for finding a minimum of a differentiable function.
-One must choose a step size called `learning rate` (or $ \alpha ∈ \mathbb {N+} $)
+One must choose a step size called `learning rate` (or $ \alpha ∈ \mathbb {N+} $ )
 
 $$ a_{i+1} = a_i - \alpha \frac{\partial J(a_i,b)}{\partial a}$$
 $$ b_{i+1} = b_i - \alpha \frac{\partial J(a,b_i)}{\partial b}$$
